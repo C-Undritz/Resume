@@ -4,13 +4,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" type="text/css">
-    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
-
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css" type="text/css">
+    <link rel="stylesheet" href="assets/css/style.css" type="text/css">
     <title>Rosie</title>
 </head>
 <body>
     <header>
-    
+        <div class="row no-gutters">
+            <!--In bootstrap 4 the first child following a row has to have a column class-->
+            <a href="index.html" class="col-md-4 logo"></a>
+            <div class="col-md-8">
+                <div class="row no-gutters bg-color-name-title">
+                    <div class="col heading">
+                        <h1 class="name">Rosie Odenkirk</h1>
+                        <h2 class="title">Full Stack Developer</h2>
+                    </div>
+                </div>
+                <div class="row no-gutters">
+                    <div class="col">
+                        <!-- class of list-inline; from Bootstrap: stops a list from displaying vertically and displays it horizontally instead.-->
+                        <ul id="nav" class="list-inline menucontainer">
+                            <!--development is mobile first, so set columns for mobile devices 1st, tablets 2nd, larger desktops 3rd, and larger screens 4th.-->
+                            <!--So what we're going to do for our list items is give them the class of col-6 and col-sm-3.-->
+                            <!--So this will mean that it will be four elements wide when displayed in anything larger than a small screen size and two elements when viewed on a mobile format.-->
+                            <!--We also have to give the class of list-inline-item to all <li> elements when we're using the Bootstrap list-inline class.-->
+                            <li class="col-6 col-sm-3 ui-menu-color-home list-inline-item menuitem">
+                                <a href="#" class="hvr-sweep-to-bottom"><i class="fa fa-home" aria-hidden="true"></i><span>Home</span></a>
+                            </li>
+                            <li class="col-6 col-sm-3 ui-menu-color-resume list-inline-item menuitem">
+                                <a href="#" class="hvr-sweep-to-bottom"><i class="fa fa-graduation-cap" aria-hidden="true"></i><span>Resume</span></a>
+                            </li>
+                            <li class="col-6 col-sm-3 ui-menu-color-contact list-inline-item menuitem">
+                                <a href="#" class="hvr-sweep-to-bottom"><i class="fa fa-comment-o" aria-hidden="true"></i><span>Contact</span></a>
+                            </li>
+                            <li class="col-6 col-sm-3 ui-menu-color-download list-inline-item menuitem">
+                                <a href="#" class="hvr-sweep-to-bottom"><i class="fa fa-download" aria-hidden="true"></i><span>Download</span></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
     </header>
     <section>
     
