@@ -1,5 +1,5 @@
 function userInformationHTML(user) {
-    return`
+    return `
         <h2>${user.name}
             <span class="small-name">
                 (@<a href="${user.html_url}" target="_blank">${user.login}</a>)
@@ -44,5 +44,5 @@ function fetchGitHubInformation(event) {
                 $("#gh-user-data").html(
                     `<h2>Error: ${errorResponse.responseJSON.message}</h2>`);
             }
-        }) 
+        });
 }
